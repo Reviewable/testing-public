@@ -18,4 +18,4 @@ Seventh edit.
 
 Random edit.
 
-Another random edit with a follow-up and a reviewer edit.
+Another random edit with a follow-up and a reviewer-committed edit.
