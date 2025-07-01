@@ -1,4 +1,4 @@
-# testing-public
+# testing-public -- it's a thing
 
 Eight edit.
 
