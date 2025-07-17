@@ -1,1 +1,2 @@
 .baker/manifests/** linguist-generated=true
+/*.txt -diff
