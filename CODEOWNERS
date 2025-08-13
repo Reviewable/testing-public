@@ -1,1 +1,2 @@
 ** @reviewable/developers foo@example.com
+/foo.txt # anyone can approve this
