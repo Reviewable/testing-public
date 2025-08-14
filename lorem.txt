@@ -17,6 +17,8 @@
 // molestie hendrerit lorem vitae dapibus. In convallis maximus mauris, sit amet hendrerit lectus
 // vulputate ac.
 
+This is a new line added in the PR.
+
 // Aliquam mollis rhoncus diam, nec varius orci tristique in. In accumsan ac lacus sit amet tempor.
 // Etiam iaculis nec libero ac lacinia. Donec finibus, nunc vitae dapibus iaculis, turpis tortor
 // condimentum tortor, nec bibendum lectus dui vel odio. Interdum et malesuada fames ac ante ipsum
@@ -35,6 +37,8 @@
 // imperdiet porttitor. Aliquam a ipsum ac mauris egestas consequat ut et turpis. Nam in blandit
 // ligula. Aliquam erat volutpat. Donec rhoncus dui at gravida elementum. Nam quis lorem eget neque
 // aliquam malesuada.
+
+This is another new line added in the PR.
 
 // Nunc varius vestibulum neque vitae gravida. Phasellus et mi enim. Nulla et arcu eu augue pulvinar
 // vehicula nec feugiat ligula. Integer sed purus eu dolor pretium tincidunt. Aliquam quis viverra
