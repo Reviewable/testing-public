@@ -17,6 +17,8 @@
 // molestie hendrerit lorem vitae dapibus. In convallis maximus mauris, sit amet hendrerit lectus
 // vulputate ac.
 
+Another new line.
+
 // Aliquam mollis rhoncus diam, nec varius orci tristique in. In accumsan ac lacus sit amet tempor.
 // Etiam iaculis nec libero ac lacinia. Donec finibus, nunc vitae dapibus iaculis, turpis tortor
 // condimentum tortor, nec bibendum lectus dui vel odio. Interdum et malesuada fames ac ante ipsum
@@ -27,7 +29,7 @@
 // vitae semper dui. Integer fermentum nec nulla eget aliquet. Fusce vitae tortor hendrerit, maximus
 // ipsum id, fringilla mi.
 
-Something something bla blah blah.
+Something something blah blah blah.
 
 // Curabitur eu tincidunt magna. Class aptent taciti sociosqu ad litora torquent per conubia nostra,
 // per inceptos himenaeos. In hac habitasse platea dictumst. Phasellus placerat mollis eros et
