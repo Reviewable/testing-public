@@ -1,8 +1,7 @@
 name: Triple coinflips
 on:
-  push:
   pull_request:
-  workflow_dispatch:
+    types: [opened, synchronize, reopened]
 
 jobs:
   flip1:
@@ -13,6 +12,7 @@ jobs:
       - uses: ./.github/actions/deterministic-coinflip
         with:
           salt: alpha
+          sha: ${{ github.event.pull_request.head.sha }}
 
   flip2:
     name: Flip B
@@ -22,6 +22,7 @@ jobs:
       - uses: ./.github/actions/deterministic-coinflip
         with:
           salt: bravo
+          sha: ${{ github.event.pull_request.head.sha }}
 
   flip3:
     name: Flip C
@@ -31,6 +32,7 @@ jobs:
       - uses: ./.github/actions/deterministic-coinflip
         with:
           salt: charlie
+          sha: ${{ github.event.pull_request.head.sha }}
 
   flip4:
     name: Flip D
@@ -40,3 +42,4 @@ jobs:
       - uses: ./.github/actions/deterministic-coinflip
         with:
           salt: delta
+          sha: ${{ github.event.pull_request.head.sha }}
