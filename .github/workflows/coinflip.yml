@@ -1,0 +1,42 @@
+name: Triple coinflips
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  flip1:
+    name: Flip A
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: ./.github/actions/deterministic-coinflip
+        with:
+          salt: alpha
+
+  flip2:
+    name: Flip B
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: ./.github/actions/deterministic-coinflip
+        with:
+          salt: bravo
+
+  flip3:
+    name: Flip C
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: ./.github/actions/deterministic-coinflip
+        with:
+          salt: charlie
+
+  flip4:
+    name: Flip D
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: ./.github/actions/deterministic-coinflip
+        with:
+          salt: delta
