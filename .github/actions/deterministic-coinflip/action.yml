@@ -1,27 +1,32 @@
 name: Deterministic coin flip (50%)
-description: Fails ~50% of the time based on GITHUB_SHA + salt.
+description: Fails ~50% of the time based on SHA + salt.
 inputs:
   salt:
     description: Arbitrary string to alter the pass/fail pattern
     required: true
+  sha:
+    description: Commit SHA to hash (defaults to github.sha)
+    required: false
 runs:
   using: composite
   steps:
     - id: flip
       shell: bash
+      env:
+        SALT: ${{ inputs.salt }}
+        # Prefer caller-provided SHA; else fall back to GITHUB_SHA.
+        SHA_TO_HASH: ${{ inputs.sha || env.GITHUB_SHA }}
       run: |
         node - <<'NODE'
         const crypto = require('crypto');
-        const sha = process.env.GITHUB_SHA || '';
-        const salt = process.env.INPUT_SALT || '';
+        const sha = process.env.SHA_TO_HASH || '';
+        const salt = process.env.SALT || '';
         const h = crypto.createHash('sha256').update(sha + salt).digest('hex');
-        const lsb = parseInt(h.slice(-1), 16) & 1; // 0 or 1
+        const lsb = parseInt(h.slice(-1), 16) & 1;
         const outcome = lsb ? 'fail' : 'pass';
-        // Expose for later steps
-        require('fs').appendFileSync(
-          process.env.GITHUB_OUTPUT,
-          `hash=${h}\nlsb=${lsb}\noutcome=${outcome}\n`
-        );
+        require('fs').appendFileSync(process.env.GITHUB_OUTPUT, `hash=${h}\nlsb=${lsb}\noutcome=${outcome}\n`);
+        console.log(`sha=${sha}`);
+        console.log(`salt=${salt}`);
         console.log(`hash=${h}`);
         console.log(`outcome=${outcome}`);
         NODE
@@ -30,15 +35,13 @@ runs:
       if: steps.flip.outputs.outcome == 'fail'
       shell: bash
       run: |
-        echo "Deterministic fail (salt=${{ inputs.salt }}, sha=${GITHUB_SHA})" >&2
+        echo "Deterministic fail (salt='${{ inputs.salt }}', sha='${{ inputs.sha || env.GITHUB_SHA }}')" >&2
         exit 1
+
 outputs:
   hash:
-    description: SHA-256 of (GITHUB_SHA + salt)
     value: ${{ steps.flip.outputs.hash }}
   lsb:
-    description: Least-significant bit used for decision
     value: ${{ steps.flip.outputs.lsb }}
   outcome:
-    description: pass|fail
     value: ${{ steps.flip.outputs.outcome }}
