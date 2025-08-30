@@ -40,6 +40,8 @@ Something something blah blah blah.  And more blah.
 // ligula. Aliquam erat volutpat. Donec rhoncus dui at gravida elementum. Nam quis lorem eget neque
 // aliquam malesuada.
 
+A fresh line in base.
+
 // Nunc varius vestibulum neque vitae gravida. Phasellus et mi enim. Nulla et arcu eu augue pulvinar
 // vehicula nec feugiat ligula. Integer sed purus eu dolor pretium tincidunt. Aliquam quis viverra
 // velit. Nullam pellentesque pellentesque pulvinar. Quisque mi erat, fringilla eget hendrerit quis,
