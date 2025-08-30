@@ -5,6 +5,8 @@
 // molestie. Pellentesque eu vestibulum orci. Sed blandit augue sed est consequat semper. Sed magna
 // purus, pellentesque in pretium id, laoreet non nisi.
 
+A different line in base.
+
 // Pellentesque at lorem dignissim, efficitur ex eu, consectetur risus. Interdum et malesuada fames
 // ac ante ipsum primis in faucibus. Nullam aliquet, velit quis viverra rhoncus, risus erat posuere
 // magna, quis cursus est urna sit amet ante. Fusce id sem porta, egestas odio ut, placerat urna.
@@ -39,8 +41,6 @@ Something something blah blah blah.  And more blah.
 // imperdiet porttitor. Aliquam a ipsum ac mauris egestas consequat ut et turpis. Nam in blandit
 // ligula. Aliquam erat volutpat. Donec rhoncus dui at gravida elementum. Nam quis lorem eget neque
 // aliquam malesuada.
-
-A fresh line in base.
 
 // Nunc varius vestibulum neque vitae gravida. Phasellus et mi enim. Nulla et arcu eu augue pulvinar
 // vehicula nec feugiat ligula. Integer sed purus eu dolor pretium tincidunt. Aliquam quis viverra
