@@ -19,7 +19,7 @@ A different line in base.
 // molestie hendrerit lorem vitae dapibus. In convallis maximus mauris, sit amet hendrerit lectus
 // vulputate ac.
 
-Another new line.  Conflict time!
+Another new line.  Conflict time earlier!
 Why isn't this a conflict?
 
 // Aliquam mollis rhoncus diam, nec varius orci tristique in. In accumsan ac lacus sit amet tempor.
