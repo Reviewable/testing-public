@@ -20,6 +20,7 @@ A different line in base.
 // vulputate ac.
 
 Another new line.  Conflict time!
+Why isn't this a conflict?
 
 // Aliquam mollis rhoncus diam, nec varius orci tristique in. In accumsan ac lacus sit amet tempor.
 // Etiam iaculis nec libero ac lacinia. Donec finibus, nunc vitae dapibus iaculis, turpis tortor
@@ -31,7 +32,7 @@ Another new line.  Conflict time!
 // vitae semper dui. Integer fermentum nec nulla eget aliquet. Fusce vitae tortor hendrerit, maximus
 // ipsum id, fringilla mi.
 
-Something something blah blah blah.  And more blah.
+Something something blah blah blah.  And more blahssss.
 
 // Curabitur eu tincidunt magna. Class aptent taciti sociosqu ad litora torquent per conubia nostra,
 // per inceptos himenaeos. In hac habitasse platea dictumst. Phasellus placerat mollis eros et
