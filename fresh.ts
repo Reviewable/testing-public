@@ -2,7 +2,7 @@
 
 export class Foo {
   get bar() {
-    return 'bar';
+    return 'baz';
   }
 }
 
