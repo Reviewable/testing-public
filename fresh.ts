@@ -6,3 +6,4 @@ export class Foo {
   }
 }
 
+// Commit A
