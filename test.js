@@ -1,3 +1,3 @@
-let a = 1 + 4;
+let a = 1 + 5;
 console.log(a);
 a += 23;
