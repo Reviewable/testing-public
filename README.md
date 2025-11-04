@@ -1,7 +1,5 @@
 # testing-public -- it's a thing
 
-Eight edit.
-
 Fourth edit.
 
 Second edit.
