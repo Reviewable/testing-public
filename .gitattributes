@@ -1,4 +1,4 @@
 .baker/manifests/** linguist-generated=true
 /*.txt -diff
 /lorem.txt diff
-/this, that.bin -text
+/this,[[:space:]]that.bin -text
