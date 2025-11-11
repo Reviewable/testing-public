@@ -14,4 +14,4 @@ Seventh edit.
 
 Random edit.  +1
 
-Supplementary edit.  Again x2.
+Supplementary edit.  Again x3.
