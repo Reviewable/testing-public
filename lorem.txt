@@ -19,8 +19,12 @@ A different line in base.
 // molestie hendrerit lorem vitae dapibus. In convallis maximus mauris, sit amet hendrerit lectus
 // vulputate ac.
 
+<<<<<<< HEAD
 Another new line.  Conflict time earlier!
 Why isn't this a conflict?
+=======
+Another new line but edited and then edited some more.
+>>>>>>> dd5772f (Update lorem.txt)
 
 // Aliquam mollis rhoncus diam, nec varius orci tristique in. In accumsan ac lacus sit amet tempor.
 // Etiam iaculis nec libero ac lacinia. Donec finibus, nunc vitae dapibus iaculis, turpis tortor
@@ -32,7 +36,11 @@ Why isn't this a conflict?
 // vitae semper dui. Integer fermentum nec nulla eget aliquet. Fusce vitae tortor hendrerit, maximus
 // ipsum id, fringilla mi.
 
+<<<<<<< HEAD
 Something something blah blah blah.  And more blahssss.
+=======
+Something something blah blah blah.
+>>>>>>> dd5772f (Update lorem.txt)
 
 // Curabitur eu tincidunt magna. Class aptent taciti sociosqu ad litora torquent per conubia nostra,
 // per inceptos himenaeos. In hac habitasse platea dictumst. Phasellus placerat mollis eros et
@@ -42,6 +50,8 @@ Something something blah blah blah.  And more blahssss.
 // imperdiet porttitor. Aliquam a ipsum ac mauris egestas consequat ut et turpis. Nam in blandit
 // ligula. Aliquam erat volutpat. Donec rhoncus dui at gravida elementum. Nam quis lorem eget neque
 // aliquam malesuada.
+
+Here's another edit in head.
 
 // Nunc varius vestibulum neque vitae gravida. Phasellus et mi enim. Nulla et arcu eu augue pulvinar
 // vehicula nec feugiat ligula. Integer sed purus eu dolor pretium tincidunt. Aliquam quis viverra
