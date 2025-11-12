@@ -19,8 +19,12 @@ A different line in base.
 // molestie hendrerit lorem vitae dapibus. In convallis maximus mauris, sit amet hendrerit lectus
 // vulputate ac.
 
+<<<<<<< HEAD
 Another new line.  Conflict time earlier!
 Why isn't this a conflict?
+=======
+Another new line.  Conflict time right now!
+>>>>>>> 5a2f6e2 (Update lorem.txt)
 
 // Aliquam mollis rhoncus diam, nec varius orci tristique in. In accumsan ac lacus sit amet tempor.
 // Etiam iaculis nec libero ac lacinia. Donec finibus, nunc vitae dapibus iaculis, turpis tortor
