@@ -4,11 +4,6 @@ on:
   pull_request:
     types: [opened, ready_for_review]
 
-permissions:
-  contents: read
-  pull-requests: write
-  issues: write
-
 jobs:
   request-codex-review:
     if: |
@@ -17,9 +12,10 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Post @codex review comment
+      - name: Post @codex review comment as user
         uses: actions/github-script@v7
         with:
+          github-token: ${{ secrets.PIOTR_PR_COMMENT_TOKEN }}
           script: |
             const pr = context.payload.pull_request;
             if (!pr) {
@@ -38,7 +34,7 @@ jobs:
               `Triggered automatically because this PR was opened ready for review ` +
               `or was marked ready for review.`;
 
-            // Avoid posting the same trigger comment twice.
+            // Check existing comments so we don't post duplicates.
             const { data: comments } = await github.rest.issues.listComments({
               owner,
               repo,
@@ -46,8 +42,8 @@ jobs:
               per_page: 100,
             });
 
-            const alreadyTriggered = comments.some(c =>
-              c.user?.type === 'Bot' && c.body?.includes(marker)
+            const alreadyTriggered = comments.some(comment =>
+              comment.body?.includes(marker)
             );
 
             if (alreadyTriggered) {
