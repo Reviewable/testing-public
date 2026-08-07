@@ -1,4 +1,4 @@
-name: Triple coinflips
+name: Quadruple coinflips
 on:
   pull_request:
     types: [opened, synchronize, reopened]
